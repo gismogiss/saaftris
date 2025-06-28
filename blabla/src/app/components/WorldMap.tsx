@@ -2,8 +2,8 @@
 
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
+// Use local GeoJSON to avoid external network requests
+const geoUrl = "/data/world-countries.json";
 
 export default function WorldMap({
   onCountryClick,
